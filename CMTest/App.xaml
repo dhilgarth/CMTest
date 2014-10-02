@@ -1,13 +1,12 @@
 ﻿<Application x:Class="CMTest.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:CmTest="clr-namespace:CMTest"
-             StartupUri="MainWindow.xaml">
+             xmlns:CmTest="clr-namespace:CMTest">
   <Application.Resources>
     <ResourceDictionary>
       <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary>
-          <!--<CmTest:AppBootstrapper x:Key="bootstrapper" />-->
+          <CmTest:AppBootstrapper x:Key="bootstrapper" />
         </ResourceDictionary>
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
