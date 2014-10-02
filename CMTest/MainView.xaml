@@ -1,0 +1,22 @@
+﻿<Window x:Class="CMTest.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:CmTest="clr-namespace:CMTest"
+        Title="MainView" Height="300" Width="300">
+  <Grid>
+    <CmTest:OKCancelControl>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label>Some content:</Label>
+        <TextBox Name="BoundData" Grid.Row="0" Grid.Column="1" />
+        <TextBlock Name="BoundData2" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1" />
+      </Grid>
+    </CmTest:OKCancelControl>
+  </Grid>
+</Window>
